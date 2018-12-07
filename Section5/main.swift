@@ -1,37 +1,29 @@
-//
-//  main.swift
-//  Section5
-//
-//  Created by Satoru Ogura on 2018/11/25.
-//  Copyright © 2018 Satoru Ogura. All rights reserved.
-//
-
 import Foundation
 
 struct
-MulLayer< FP: Numeric > {
-	var	x: FP = 0
-	var	y: FP = 0
+MulLayer< N: Numeric > {
+	var	x: N = 0
+	var	y: N = 0
 	mutating func
-	Forward( _ x: FP, _ y: FP ) -> FP {
+	Forward( _ x: N, _ y: N ) -> N {
 		self.x = x
 		self.y = y
 		return x * y
 	}
 	func
-	Backward( _ d: FP ) -> ( FP, FP ) {
+	Backward( _ d: N ) -> ( N, N ) {
 		return ( d * y, d * x )
 	}
 }
 
 struct
-AddLayer< FP: Numeric > {
+AddLayer< N: Numeric > {
 	func
-	Forward( _ x: FP, _ y: FP ) -> FP {
+	Forward( _ x: N, _ y: N ) -> N {
 		return x + y
 	}
 	func
-	Backward( _ d: FP ) -> ( FP, FP ) {
+	Backward( _ d: N ) -> ( N, N ) {
 		return ( d, d )
 	}
 }

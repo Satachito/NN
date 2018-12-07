@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5E15EC9C21B6AB9400E52F38 /* Section5.8.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E15EC9B21B6AB9400E52F38 /* Section5.8.swift */; };
+		5E15ECA021B6AB9600E52F38 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E15EC9F21B6AB9600E52F38 /* Assets.xcassets */; };
+		5E15ECA321B6AB9600E52F38 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E15ECA121B6AB9600E52F38 /* Main.storyboard */; };
+		5E15ECAE21B6ADB000E52F38 /* train-images.idx3-ubyte in Resources */ = {isa = PBXBuildFile; fileRef = 5E15ECAA21B6ADAF00E52F38 /* train-images.idx3-ubyte */; };
+		5E15ECAF21B6ADB000E52F38 /* t10k-images.idx3-ubyte in Resources */ = {isa = PBXBuildFile; fileRef = 5E15ECAB21B6ADAF00E52F38 /* t10k-images.idx3-ubyte */; };
+		5E15ECB021B6ADB000E52F38 /* t10k-labels.idx1-ubyte in Resources */ = {isa = PBXBuildFile; fileRef = 5E15ECAC21B6ADAF00E52F38 /* t10k-labels.idx1-ubyte */; };
+		5E15ECB121B6ADB000E52F38 /* train-labels.idx1-ubyte in Resources */ = {isa = PBXBuildFile; fileRef = 5E15ECAD21B6ADB000E52F38 /* train-labels.idx1-ubyte */; };
+		5E15ECB421B6AE6800E52F38 /* NN.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5E15ECB321B6AE6800E52F38 /* NN.cpp */; };
+		5E15ECB621B6F1F100E52F38 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EE59B8821A6D54300C7DCA1 /* Accelerate.framework */; };
+		5E15ECB721B6F3BE00E52F38 /* JP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE12CE821A57DD200BC7802 /* JP.swift */; };
 		5E751C9C21B288C20036A897 /* JPVector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE12CE921A57DD200BC7802 /* JPVector.swift */; };
 		5E90697121AA5C7A00B8098A /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E90697021AA5C7A00B8098A /* main.swift */; };
 		5E90697521AA5C9400B8098A /* JPVector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE12CE921A57DD200BC7802 /* JPVector.swift */; };
@@ -16,6 +26,7 @@
 		5E9069A221AA678000B8098A /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E9069A121AA678000B8098A /* main.swift */; };
 		5EE59B8321A6D28900C7DCA1 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5EE59B8221A6D28900C7DCA1 /* main.cpp */; };
 		5EE59B8921A6D54300C7DCA1 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EE59B8821A6D54300C7DCA1 /* Accelerate.framework */; };
+		5EE84EF521B3F71C00741610 /* JPMatrix.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE12CE721A57DD200BC7802 /* JPMatrix.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -58,6 +69,19 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		5E15EC9921B6AB9400E52F38 /* Section5.8.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Section5.8.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E15EC9B21B6AB9400E52F38 /* Section5.8.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Section5.8.swift; sourceTree = "<group>"; };
+		5E15EC9F21B6AB9600E52F38 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5E15ECA221B6AB9600E52F38 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5E15ECA421B6AB9600E52F38 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5E15ECA521B6AB9600E52F38 /* Section5_8.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Section5_8.entitlements; sourceTree = "<group>"; };
+		5E15ECAA21B6ADAF00E52F38 /* train-images.idx3-ubyte */ = {isa = PBXFileReference; lastKnownFileType = file; path = "train-images.idx3-ubyte"; sourceTree = "<group>"; };
+		5E15ECAB21B6ADAF00E52F38 /* t10k-images.idx3-ubyte */ = {isa = PBXFileReference; lastKnownFileType = file; path = "t10k-images.idx3-ubyte"; sourceTree = "<group>"; };
+		5E15ECAC21B6ADAF00E52F38 /* t10k-labels.idx1-ubyte */ = {isa = PBXFileReference; lastKnownFileType = file; path = "t10k-labels.idx1-ubyte"; sourceTree = "<group>"; };
+		5E15ECAD21B6ADB000E52F38 /* train-labels.idx1-ubyte */ = {isa = PBXFileReference; lastKnownFileType = file; path = "train-labels.idx1-ubyte"; sourceTree = "<group>"; };
+		5E15ECB221B6AE6800E52F38 /* Section5.8-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Section5.8-Bridging-Header.h"; sourceTree = "<group>"; };
+		5E15ECB321B6AE6800E52F38 /* NN.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = NN.cpp; sourceTree = "<group>"; };
+		5E15ECB521B6ECB900E52F38 /* NN.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NN.h; sourceTree = "<group>"; };
 		5E90696E21AA5C7A00B8098A /* SampleWeight */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SampleWeight; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E90697021AA5C7A00B8098A /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		5E90699421AA5DF100B8098A /* Section5 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Section5; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -77,6 +101,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		5E15EC9621B6AB9400E52F38 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E15ECB621B6F1F100E52F38 /* Accelerate.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5E90696B21AA5C7A00B8098A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -109,6 +141,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5E15EC9A21B6AB9400E52F38 /* Section5.8 */ = {
+			isa = PBXGroup;
+			children = (
+				5E15EC9B21B6AB9400E52F38 /* Section5.8.swift */,
+				5E15ECB521B6ECB900E52F38 /* NN.h */,
+				5E15ECB321B6AE6800E52F38 /* NN.cpp */,
+				5E15EC9F21B6AB9600E52F38 /* Assets.xcassets */,
+				5E15ECA121B6AB9600E52F38 /* Main.storyboard */,
+				5E15ECA421B6AB9600E52F38 /* Info.plist */,
+				5E15ECA521B6AB9600E52F38 /* Section5_8.entitlements */,
+				5E15ECB221B6AE6800E52F38 /* Section5.8-Bridging-Header.h */,
+			);
+			path = Section5.8;
+			sourceTree = "<group>";
+		};
+		5E15ECA921B6AD9900E52F38 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
 		5E90696F21AA5C7A00B8098A /* SampleWeight */ = {
 			isa = PBXGroup;
 			children = (
@@ -136,6 +190,7 @@
 		5EE3B425219BCBF700014691 = {
 			isa = PBXGroup;
 			children = (
+				5E15ECA921B6AD9900E52F38 /* New Group */,
 				5EE12CE821A57DD200BC7802 /* JP.swift */,
 				5EE12CE921A57DD200BC7802 /* JPVector.swift */,
 				5EE12CE721A57DD200BC7802 /* JPMatrix.swift */,
@@ -147,6 +202,7 @@
 				5E90696F21AA5C7A00B8098A /* SampleWeight */,
 				5E90699521AA5DF100B8098A /* Section5 */,
 				5E9069A021AA678000B8098A /* Section5.5 */,
+				5E15EC9A21B6AB9400E52F38 /* Section5.8 */,
 				5EE3B42F219BCBF700014691 /* Products */,
 				5EE59B8721A6D54300C7DCA1 /* Frameworks */,
 			);
@@ -159,6 +215,7 @@
 				5E90696E21AA5C7A00B8098A /* SampleWeight */,
 				5E90699421AA5DF100B8098A /* Section5 */,
 				5E90699F21AA678000B8098A /* Section5.5 */,
+				5E15EC9921B6AB9400E52F38 /* Section5.8.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -166,6 +223,10 @@
 		5EE59B8121A6D28900C7DCA1 /* MNIST */ = {
 			isa = PBXGroup;
 			children = (
+				5E15ECAB21B6ADAF00E52F38 /* t10k-images.idx3-ubyte */,
+				5E15ECAC21B6ADAF00E52F38 /* t10k-labels.idx1-ubyte */,
+				5E15ECAA21B6ADAF00E52F38 /* train-images.idx3-ubyte */,
+				5E15ECAD21B6ADB000E52F38 /* train-labels.idx1-ubyte */,
 				5EE59B8221A6D28900C7DCA1 /* main.cpp */,
 			);
 			path = MNIST;
@@ -182,6 +243,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		5E15EC9821B6AB9400E52F38 /* Section5.8 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5E15ECA821B6AB9600E52F38 /* Build configuration list for PBXNativeTarget "Section5.8" */;
+			buildPhases = (
+				5E15EC9521B6AB9400E52F38 /* Sources */,
+				5E15EC9621B6AB9400E52F38 /* Frameworks */,
+				5E15EC9721B6AB9400E52F38 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Section5.8;
+			productName = Section5.8;
+			productReference = 5E15EC9921B6AB9400E52F38 /* Section5.8.app */;
+			productType = "com.apple.product-type.application";
+		};
 		5E90696D21AA5C7A00B8098A /* SampleWeight */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5E90697421AA5C7A00B8098A /* Build configuration list for PBXNativeTarget "SampleWeight" */;
@@ -260,6 +338,10 @@
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = "Satoru Ogura";
 				TargetAttributes = {
+					5E15EC9821B6AB9400E52F38 = {
+						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
+					};
 					5E90696D21AA5C7A00B8098A = {
 						CreatedOnToolsVersion = 10.1;
 					};
@@ -280,6 +362,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 5EE3B425219BCBF700014691;
 			productRefGroup = 5EE3B42F219BCBF700014691 /* Products */;
@@ -290,11 +373,38 @@
 				5E90696D21AA5C7A00B8098A /* SampleWeight */,
 				5E90699321AA5DF100B8098A /* Section5 */,
 				5E90699E21AA678000B8098A /* Section5.5 */,
+				5E15EC9821B6AB9400E52F38 /* Section5.8 */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		5E15EC9721B6AB9400E52F38 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E15ECAE21B6ADB000E52F38 /* train-images.idx3-ubyte in Resources */,
+				5E15ECB121B6ADB000E52F38 /* train-labels.idx1-ubyte in Resources */,
+				5E15ECAF21B6ADB000E52F38 /* t10k-images.idx3-ubyte in Resources */,
+				5E15ECA021B6AB9600E52F38 /* Assets.xcassets in Resources */,
+				5E15ECB021B6ADB000E52F38 /* t10k-labels.idx1-ubyte in Resources */,
+				5E15ECA321B6AB9600E52F38 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		5E15EC9521B6AB9400E52F38 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E15EC9C21B6AB9400E52F38 /* Section5.8.swift in Sources */,
+				5E15ECB421B6AE6800E52F38 /* NN.cpp in Sources */,
+				5E15ECB721B6F3BE00E52F38 /* JP.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5E90696A21AA5C7A00B8098A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -318,6 +428,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5EE84EF521B3F71C00741610 /* JPMatrix.swift in Sources */,
 				5E9069A221AA678000B8098A /* main.swift in Sources */,
 				5E751C9C21B288C20036A897 /* JPVector.swift in Sources */,
 			);
@@ -333,7 +444,66 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXVariantGroup section */
+		5E15ECA121B6AB9600E52F38 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5E15ECA221B6AB9600E52F38 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
+		5E15ECA621B6AB9600E52F38 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = Section5.8/Section5_8.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 42D35TL6R9;
+				INFOPLIST_FILE = Section5.8/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_BUNDLE_IDENTIFIER = "tokyo.828.Section5-8";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OBJC_BRIDGING_HEADER = "Section5.8/Section5.8-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		5E15ECA721B6AB9600E52F38 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = Section5.8/Section5_8.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 42D35TL6R9;
+				INFOPLIST_FILE = Section5.8/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_BUNDLE_IDENTIFIER = "tokyo.828.Section5-8";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OBJC_BRIDGING_HEADER = "Section5.8/Section5.8-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Release;
+		};
 		5E90697221AA5C7A00B8098A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -538,6 +708,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		5E15ECA821B6AB9600E52F38 /* Build configuration list for PBXNativeTarget "Section5.8" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5E15ECA621B6AB9600E52F38 /* Debug */,
+				5E15ECA721B6AB9600E52F38 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		5E90697421AA5C7A00B8098A /* Build configuration list for PBXNativeTarget "SampleWeight" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

@@ -93,6 +93,7 @@ ReadSwappedUInt32( ifstream& p ) {
 template	< typename F >	Matrix< F >
 ReadImages( const char* p )  {
 	ifstream	wI( p );
+	assert( wI.is_open() );
 	auto		wMagic = ReadSwappedUInt32( wI );	assert( wMagic == 0x00000803 );
 	auto		n = ReadSwappedUInt32( wI );
 	auto		nPixelsV = ReadSwappedUInt32( wI );
@@ -121,10 +122,10 @@ ReadLabels( string p )  {
 template	< typename F >	void
 Main() {
 	Run(
-		ReadImages< F >( "/Volumes/AKIKO/MNIST/train-images-idx3-ubyte" )
-	,	ReadLabels< F >( "/Volumes/AKIKO/MNIST/train-labels-idx1-ubyte" )
-	,	ReadImages< F >( "/Volumes/AKIKO/MNIST/t10k-images-idx3-ubyte" )
-	,	ReadLabels< F >( "/Volumes/AKIKO/MNIST/t10k-labels-idx1-ubyte" )
+		ReadImages< F >( "/Users/sat/Desktop/NN/MNIST/train-images.idx3-ubyte" )
+	,	ReadLabels< F >( "/Users/sat/Desktop/NN/MNIST/train-labels.idx1-ubyte" )
+	,	ReadImages< F >( "/Users/sat/Desktop/NN/MNIST/t10k-images.idx3-ubyte" )
+	,	ReadLabels< F >( "/Users/sat/Desktop/NN/MNIST/t10k-labels.idx1-ubyte" )
 	);
 }
 
